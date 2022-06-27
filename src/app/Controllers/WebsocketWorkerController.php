@@ -17,14 +17,20 @@ class WebsocketWorkerController extends Worker
         ];
 
         // SSL context.
-        $context_option = config('websocket.context');
+        $context_option = [
+            'context' => [
+                'ssl' => config('websocket.context_ssl')
+            ]
+        ];
 
         // Set address
         $socket_name = 'websocket://' . $config["ip"] . ':' . $config["port"];
 
-        // Enable SSL. WebSocket+SSL means that Secure WebSocket (wss://).
-        // The similar approaches for Https etc.
-        $this->transport = 'ssl';
+        if (config('websocket.transport_ssl')) {
+            // Enable SSL. WebSocket+SSL means that Secure WebSocket (wss://).
+            // The similar approaches for Https etc.
+            $this->transport = 'ssl';
+        }
 
         // Emitted when new connection come
         $this->onConnect = function ($connection) {
