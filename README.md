@@ -15,7 +15,7 @@ this package worked with **[Workerman](https://github.com/walkor/workerman)**
 ## Install with composer
 
 ``` bash
-composer require workerman/workerman
+composer require sirj3x/laravel-websocket
 ```
 
 ## vendor:publish
