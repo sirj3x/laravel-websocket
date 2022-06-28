@@ -79,7 +79,6 @@ class EventMakeCommand extends GeneratorCommand
     protected function buildClass($name)
     {
         $eventNamespace = $this->getNamespace($name);
-
         $replace = [];
 
         if ($this->option('parent')) {

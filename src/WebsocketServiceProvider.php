@@ -26,7 +26,7 @@ class WebsocketServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../../config/websocket.php' => config_path('websocket.php'),
+            __DIR__ . '/../config/websocket.php' => config_path('websocket.php'),
         ]);
 
         if ($this->app->runningInConsole()) {
