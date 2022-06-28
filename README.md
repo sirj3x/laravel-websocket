@@ -12,36 +12,10 @@ this package worked with **[Workerman](https://github.com/walkor/workerman)**
 * PHP >=7.3
 * Workerman package
 
-## Install
-
-### Step 1
-Install Workerman via composer
+## Install with composer
 
 ``` bash
 composer require workerman/workerman
-```
-
-### Step 2
-Download and move files to: `{laravel-project-folder}/packages/sirj3x/websocket/{here}`
-
-### Step 3
-Add line to: `config/app.php`
-``` php
-/*
- * Package Service Providers...
- */
-Sirj3x\Websocket\WebsocketServiceProvider::class, // add this
-```
-
-### Step 4
-Add line to your`composer.json`
-``` json
-"autoload-dev": {
-    "psr-4": {
-        "Tests\\": "tests/",
-        "Sirj3x\\Websocket\\": "packages/sirj3x/websocket/src" // add this
-    }
-},
 ```
 
 ## vendor:publish
