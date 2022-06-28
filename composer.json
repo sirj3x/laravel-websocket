@@ -1,7 +1,7 @@
 {
     "name": "sirj3x/laravel-websocket",
     "description": "Websocket supports HTTP, Websocket, SSL and other custom protocols.",
-    "type": "library",
+    "version": "1.0.1",
     "license": "MIT",
     "authors": [
         {
@@ -15,21 +15,21 @@
         "email": "mhashemi0151@gmail.com",
         "source": "https://github.com/sirj3x/laravel-websocket"
     },
-    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.3",
+        "workerman/workerman": "^4.0"
+    },
     "autoload": {
         "psr-4": {
             "Sirj3x\\Websocket\\": "src/"
         }
     },
-    "require": {
-        "php": ">=7.3",
-        "workerman/workerman": "^4.0"
-    },
     "extra": {
         "laravel": {
             "providers": [
-                "Sirj3x\\Websocket\\Prodivers\\WebsocketServiceProvider"
+                "Sirj3x\\Websocket\\WebsocketServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev"
 }

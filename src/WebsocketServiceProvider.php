@@ -1,6 +1,6 @@
 <?php
 
-namespace Sirj3x\Websocket\Providers;
+namespace Sirj3x\Websocket;
 
 use Illuminate\Support\ServiceProvider;
 use Sirj3x\Websocket\Console\Commands\EventMakeCommand;

@@ -30,7 +30,7 @@ Add line to: `config/app.php`
 /*
  * Package Service Providers...
  */
-Sirj3x\Websocket\Providers\WebsocketServiceProvider::class, // add this
+Sirj3x\Websocket\WebsocketServiceProvider::class, // add this
 ```
 
 ### Step 4
@@ -47,7 +47,7 @@ Add line to your`composer.json`
 ## vendor:publish
 You can run vendor:publish command to have config file of package on this path: `config/websocket.php`
 ``` bash
-php artisan vendor:publish --provider="Sirj3x\Websocket\Providers\WebsocketServiceProvider"
+php artisan vendor:publish --provider="Sirj3x\Websocket\WebsocketServiceProvider"
 ```
 
 ## Available commands
