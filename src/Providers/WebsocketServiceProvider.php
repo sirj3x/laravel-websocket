@@ -1,10 +1,10 @@
 <?php
 
-namespace Sirj3x\Websocket\app\Providers;
+namespace Sirj3x\Websocket\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Sirj3x\Websocket\app\Console\Commands\EventMakeCommand;
-use Sirj3x\Websocket\app\Console\Commands\WebsocketCommand;
+use Sirj3x\Websocket\Console\Commands\EventMakeCommand;
+use Sirj3x\Websocket\Console\Commands\WebsocketCommand;
 
 class WebsocketServiceProvider extends ServiceProvider
 {
@@ -26,7 +26,7 @@ class WebsocketServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../../config/websocket.php' => config_path('websocket.php'),
+            __DIR__ . '/../../config/websocket.php' => config_path('websocket.php'),
         ]);
 
         if ($this->app->runningInConsole()) {

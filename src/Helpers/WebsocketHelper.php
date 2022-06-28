@@ -1,6 +1,6 @@
 <?php
 
-namespace Sirj3x\Websocket\app\Helpers;
+namespace Sirj3x\Websocket\Helpers;
 
 class WebsocketHelper
 {

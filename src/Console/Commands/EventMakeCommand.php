@@ -1,6 +1,6 @@
 <?php
 
-namespace Sirj3x\Websocket\app\Console\Commands;
+namespace Sirj3x\Websocket\Console\Commands;
 
 use Illuminate\Console\Concerns\CreatesMatchingTest;
 use Illuminate\Console\GeneratorCommand;
@@ -52,7 +52,7 @@ class EventMakeCommand extends GeneratorCommand
      */
     protected function resolveStubPath($stub)
     {
-        return file_exists($customPath = $this->laravel->basePath('packages\sirj3x\websocket\src' . trim($stub, '/')))
+        return file_exists($customPath = $this->laravel->basePath('packages\sirj3x\laravel-websocket' . trim($stub, '/')))
             ? $customPath
             : __DIR__ . $stub;
     }
@@ -65,7 +65,7 @@ class EventMakeCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace . '\Http\Websocket\Events';
+        return config('websocket.events_dir');
     }
 
     /**

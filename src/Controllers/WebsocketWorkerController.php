@@ -1,10 +1,10 @@
 <?php
 
-namespace Sirj3x\Websocket\app\Controllers;
+namespace Sirj3x\Websocket\Controllers;
 
 use Illuminate\Support\Facades\App;
-use Sirj3x\Websocket\app\Helpers\ParserHelper;
-use Sirj3x\Websocket\app\Helpers\WebsocketHelper;
+use Sirj3x\Websocket\Helpers\ParserHelper;
+use Sirj3x\Websocket\Helpers\WebsocketHelper;
 use Workerman\Worker;
 
 class WebsocketWorkerController extends Worker

@@ -28,7 +28,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Sirj3x\\Websocket\\app\\Prodivers\\WebsocketServiceProvider"
+                "Sirj3x\\Websocket\\Prodivers\\WebsocketServiceProvider"
             ]
         }
     }

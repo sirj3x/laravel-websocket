@@ -1,9 +1,9 @@
 <?php
 
-namespace Sirj3x\Websocket\app\Console\Commands;
+namespace Sirj3x\Websocket\Console\Commands;
 
 use Illuminate\Console\Command;
-use Sirj3x\Websocket\app\Controllers\WebsocketWorkerController;
+use Sirj3x\Websocket\Controllers\WebsocketWorkerController;
 use Workerman\Worker;
 
 class WebsocketCommand extends Command
