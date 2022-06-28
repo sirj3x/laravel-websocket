@@ -1,7 +1,6 @@
 {
     "name": "sirj3x/laravel-websocket",
     "description": "Websocket supports HTTP, Websocket, SSL and other custom protocols.",
-    "version": "1.0.1",
     "license": "MIT",
     "authors": [
         {
